@@ -8,7 +8,8 @@ import matplotlib.pyplot as plt
 # CONFIG
 # ==========================================================
 
-BASE_DIR = r"C:\Users\Martin\Desktop\memoria"
+SCRIPT_DIR = Path(__file__).resolve().parent
+BASE_DIR = SCRIPT_DIR.parent
 
 RESULTS_DIR = os.path.join(BASE_DIR, "results")
 
