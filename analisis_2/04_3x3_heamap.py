@@ -65,21 +65,6 @@ df_image["perceived_normalized"] = (
     .apply(normalize_emotion)
 )
 
-# Original manual tie resolution is intentionally disabled in analysis_2.
-# Ties must be recomputed after NR exclusion.
-# # ==========================================================
-# # RESOLVE KNOWN TIE TO MATCH THESIS TABLE
-# # ==========================================================
-
-# df_image.loc[
-#     df_image["filename"] == "1123_orig_1359.jpg",
-#     "perceived_normalized"
-# ] = "Positive"
-
-# ==========================================================
-# CREATE TABLE
-# ==========================================================
-
 emotion_order = [
     "Negative",
     "Neutral",
