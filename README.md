@@ -103,11 +103,11 @@ image_heatmaps/smoothed/
 image_heatmaps/overlay/
 ```
 
-## Paso 4. Calcular métricas globales y estadísticas exploratorias
+## 4. Calcular métricas globales y estadísticas exploratorias
 En este paso se calcula Kruskal-Wallis y las pruebas post-hoc, además de resúmenes de los datos encontrados.
 
 ```bash
-python "heatmap_analysis_with_statistical_summary.py"
+py heatmap_analysis_with_statistical_summary.py
 ```
 
 Salida principal:
