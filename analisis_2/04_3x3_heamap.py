@@ -6,7 +6,8 @@ import matplotlib.pyplot as plt
 # CONFIG
 # ==========================================================
 
-BASE_DIR = Path(r"C:\Users\Martin\Desktop\memoria")
+SCRIPT_DIR = Path(__file__).resolve().parent
+BASE_DIR = SCRIPT_DIR.parent
 
 ANALYSIS_DIR = BASE_DIR / "analisis_2"
 INPUT_FILE = ANALYSIS_DIR / "heatmap_analysis" / "heatmap_analysis_clean_no_nr.xlsx"
