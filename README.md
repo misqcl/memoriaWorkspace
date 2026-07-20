@@ -349,11 +349,63 @@ final_integrated_interpretation/
 
 # Análisis 2: omisión de NR/nulos
 
+En esta evaluación se eliminan los pares participante-imagen cuya emoción reportada sea `NR`, `N/R`, `No responde`, `No response`, `No_response`, un valor vacío o un valor nulo. La exclusión se realiza antes de construir mapas empíricos, métricas globales, modelos mixtos, métricas AOI y evaluaciones de DeepGaze.
+
 ```bash
 cd ..
 cd .\analisis_2\ 
 ```
 
+Para esta sección, se enumeraron los scripts en su propio nombre, así que basta con correr cada script desd el `01` al `10`, en donde se obtendrán los siguientes outputs:
+
+## 1. Construir el manifiesto de observaciones válidas
+
+```bash
+py 01_build_analysis_2_manifest.py
+```
+Punto de entrada obligatorio, este script:
+
+1. carga las respuestas emocionales de cada participante;
+2. identifica `NR` y equivalentes;
+3. separa las respuestas excluidas;
+4. cruza las respuestas válidas con la matriz QA de fijaciones;
+5. conserva solamente pares con respuesta emocional válida y mirada utilizable.
+
+Entradas:
+
+```text
+Todos/Summary.xlsx
+Todos/respuestas_emociones_*.csv
+fixation_summary_QA.xlsx
+image_aois/image_aoi_seed42.csv
+```
+
+Salidas:
+
+```text
+analisis_2/
+├── valid_response_observations.csv
+├── excluded_no_response_observations.csv
+├── valid_response_matrix.xlsx
+└── exclusion_summary.xlsx
+```
+
+`valid_response_observations.csv` es la fuente maestra para las etapas estadísticas y AOI. `valid_response_matrix.xlsx`, hoja `Usable`, es la matriz utilizada para reconstruir mapas y fijaciones empíricas.
+
+## Paso 2. Regenerar los mapas de calor empíricos
+
+```bash
+py 02_create_heatmaps.py
+```
+
+Salidas:
+
+```text
+analisis_2/image_heatmaps/
+├── raw/
+├── smoothed/
+└── overlay/
+```
 
 # 5. Scripts que no forman parte del pipeline principal
 
