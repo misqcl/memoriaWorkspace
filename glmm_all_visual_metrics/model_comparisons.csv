@@ -1,0 +1,17 @@
+"metric","reduced_model","full_model","lr_statistic","df_difference","p_value","significant_0_05"
+"fixation_count","Null","Original emotion",5.24275598375789,2,0.0727026101632379,FALSE
+"fixation_count","Null","Reported emotion",1.54986003814702,2,0.460736022604534,FALSE
+"fixation_count","Original emotion","Combined",1.33317515214731,2,0.513457727102837,FALSE
+"fixation_count","Reported emotion","Combined",5.02607109775818,2,0.0810219195751949,FALSE
+"dwell_time_s","Null","Original emotion",0.518534162497872,2,0.771616911112293,FALSE
+"dwell_time_s","Null","Reported emotion",0.079771189742587,2,0.960899364679671,FALSE
+"dwell_time_s","Original emotion","Combined",0.092201598209158,2,0.95494569966776,FALSE
+"dwell_time_s","Reported emotion","Combined",0.530964570964443,2,0.766836026895744,FALSE
+"mean_fixation_duration_ms","Null","Original emotion",3.53138820602908,2,0.171068006447952,FALSE
+"mean_fixation_duration_ms","Null","Reported emotion",1.26854998314775,2,0.530319835322474,FALSE
+"mean_fixation_duration_ms","Original emotion","Combined",1.19718171387194,2,0.549585535343807,FALSE
+"mean_fixation_duration_ms","Reported emotion","Combined",3.46001993675327,2,0.177282642740916,FALSE
+"fixation_density_per_megapixel","Null","Original emotion",1.7004345012565,2,0.427322085872038,FALSE
+"fixation_density_per_megapixel","Null","Reported emotion",0.144712030793471,2,0.930199671449144,FALSE
+"fixation_density_per_megapixel","Original emotion","Combined",0.145297203574046,2,0.929927547496852,FALSE
+"fixation_density_per_megapixel","Reported emotion","Combined",1.70101967403707,2,0.427197075534496,FALSE

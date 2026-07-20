@@ -1,0 +1,17 @@
+"metric","model","formula","distribution","n_observations","n_participants","n_images","log_likelihood","aic","bic","positive_definite_hessian","singular_fit"
+"fixation_count","Null","fixation_count ~ 1 + (1 | participant) + (1 | filename)","Negative binomial",2079,37,60,-6430.29324119199,12868.586482384,12891.1450515354,TRUE,NA
+"fixation_count","Original emotion","fixation_count ~ original_emotion + (1 | participant) + (1 |     filename)","Negative binomial",2079,37,60,-6427.67186320011,12867.3437264002,12901.1815801274,TRUE,NA
+"fixation_count","Reported emotion","fixation_count ~ response_emotion + (1 | participant) + (1 |     filename)","Negative binomial",2079,37,60,-6429.51831117292,12871.0366223458,12904.874476073,TRUE,NA
+"fixation_count","Combined","fixation_count ~ original_emotion + response_emotion + (1 | participant) +     (1 | filename)","Negative binomial",2079,37,60,-6427.00527562404,12870.0105512481,12915.1276895509,TRUE,NA
+"dwell_time_s","Null","dwell_time_s_scaled ~ 1 + (1 | participant) + (1 | filename)","Gamma",2079,37,60,1570.38368755989,-3132.76737511979,-3110.20880596836,TRUE,NA
+"dwell_time_s","Original emotion","dwell_time_s_scaled ~ original_emotion + (1 | participant) +     (1 | filename)","Gamma",2079,37,60,1570.64295464114,-3129.28590928229,-3095.44805555514,TRUE,NA
+"dwell_time_s","Reported emotion","dwell_time_s_scaled ~ response_emotion + (1 | participant) +     (1 | filename)","Gamma",2079,37,60,1570.42357315477,-3128.84714630953,-3095.00929258238,TRUE,NA
+"dwell_time_s","Combined","dwell_time_s_scaled ~ original_emotion + response_emotion + (1 |     participant) + (1 | filename)","Gamma",2079,37,60,1570.68905544025,-3125.3781108805,-3080.26097257763,TRUE,NA
+"mean_fixation_duration_ms","Null","mean_fixation_duration_ms_scaled ~ 1 + (1 | participant) + (1 |     filename)","Gamma",2079,37,60,2641.93754543393,-5275.87509086785,-5253.31652171642,TRUE,NA
+"mean_fixation_duration_ms","Original emotion","mean_fixation_duration_ms_scaled ~ original_emotion + (1 | participant) +     (1 | filename)","Gamma",2079,37,60,2643.70323953694,-5275.40647907388,-5241.56862534673,TRUE,NA
+"mean_fixation_duration_ms","Reported emotion","mean_fixation_duration_ms_scaled ~ response_emotion + (1 | participant) +     (1 | filename)","Gamma",2079,37,60,2642.5718204255,-5273.143640851,-5239.30578712385,TRUE,NA
+"mean_fixation_duration_ms","Combined","mean_fixation_duration_ms_scaled ~ original_emotion + response_emotion +     (1 | participant) + (1 | filename)","Gamma",2079,37,60,2644.30183039388,-5272.60366078775,-5227.48652248489,TRUE,NA
+"fixation_density_per_megapixel","Null","fixation_density_per_megapixel_scaled ~ 1 + (1 | participant) +     (1 | filename)","Gamma",2079,37,60,998.258233995415,-1988.51646799083,-1965.9578988394,TRUE,NA
+"fixation_density_per_megapixel","Original emotion","fixation_density_per_megapixel_scaled ~ original_emotion + (1 |     participant) + (1 | filename)","Gamma",2079,37,60,999.108451246043,-1986.21690249209,-1952.37904876494,TRUE,NA
+"fixation_density_per_megapixel","Reported emotion","fixation_density_per_megapixel_scaled ~ response_emotion + (1 |     participant) + (1 | filename)","Gamma",2079,37,60,998.330590010812,-1984.66118002162,-1950.82332629448,TRUE,NA
+"fixation_density_per_megapixel","Combined","fixation_density_per_megapixel_scaled ~ original_emotion + response_emotion +     (1 | participant) + (1 | filename)","Gamma",2079,37,60,999.18109984783,-1982.36219969566,-1937.2450613928,TRUE,NA

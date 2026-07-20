@@ -1,0 +1,17 @@
+﻿metric,model,formula,n_observations,n_participants,n_images,log_likelihood,aic,bic,converged
+dwell_time_s,Null,log1p_dwell_time_s ~ 1,2079,37,60,1733.013246042652,-3458.026492085304,-3435.467922933872,True
+dwell_time_s,Original emotion,"log1p_dwell_time_s ~ C(original_emotion, Treatment(reference='Neutral'))",2079,37,60,1733.460301770101,-3454.920603540202,-3421.082749813054,True
+dwell_time_s,Reported emotion,"log1p_dwell_time_s ~ C(response_emotion, Treatment(reference='Neutral'))",2079,37,60,1733.1470492265898,-3454.2940984531797,-3420.4562447260314,True
+dwell_time_s,Combined,"log1p_dwell_time_s ~ C(original_emotion, Treatment(reference='Neutral')) + C(response_emotion, Treatment(reference='Neutral'))",2079,37,60,1733.6108353485297,-3451.2216706970594,-3406.1045323941953,True
+fixation_count,Null,log1p_fixation_count ~ 1,2079,37,60,1635.278144850502,-3262.556289701004,-3239.997720549572,True
+fixation_count,Original emotion,"log1p_fixation_count ~ C(original_emotion, Treatment(reference='Neutral'))",2079,37,60,1640.2959625635058,-3268.5919251270116,-3234.7540713998633,True
+fixation_count,Reported emotion,"log1p_fixation_count ~ C(response_emotion, Treatment(reference='Neutral'))",2079,37,60,1636.5962033207961,-3261.1924066415922,-3227.354552914444,True
+fixation_count,Combined,"log1p_fixation_count ~ C(original_emotion, Treatment(reference='Neutral')) + C(response_emotion, Treatment(reference='Neutral'))",2079,37,60,1641.3909142890907,-3266.7818285781814,-3221.6646902753173,True
+mean_fixation_duration_ms,Null,log1p_mean_fixation_duration_ms ~ 1,2079,37,60,2559.5054205758743,-5111.0108411517485,-5088.452272000316,True
+mean_fixation_duration_ms,Original emotion,"log1p_mean_fixation_duration_ms ~ C(original_emotion, Treatment(reference='Neutral'))",2079,37,60,2568.7830650518326,-5125.566130103665,-5091.728276376517,True
+mean_fixation_duration_ms,Reported emotion,"log1p_mean_fixation_duration_ms ~ C(response_emotion, Treatment(reference='Neutral'))",2079,37,60,2563.042186010527,-5114.084372021054,-5080.246518293906,True
+mean_fixation_duration_ms,Combined,"log1p_mean_fixation_duration_ms ~ C(original_emotion, Treatment(reference='Neutral')) + C(response_emotion, Treatment(reference='Neutral'))",2079,37,60,2571.5700697180155,-5127.140139436031,-5082.023001133167,True
+fixation_density_per_megapixel,Null,log1p_fixation_density_per_megapixel ~ 1,2079,37,60,-1910.5448208925673,3829.0896417851345,3851.6482109365666,True
+fixation_density_per_megapixel,Original emotion,"log1p_fixation_density_per_megapixel ~ C(original_emotion, Treatment(reference='Neutral'))",2079,37,60,-1880.0707645787961,3772.1415291575922,3805.9793828847405,True
+fixation_density_per_megapixel,Reported emotion,"log1p_fixation_density_per_megapixel ~ C(response_emotion, Treatment(reference='Neutral'))",2079,37,60,-1867.1249578535453,3746.2499157070906,3780.087769434239,True
+fixation_density_per_megapixel,Combined,"log1p_fixation_density_per_megapixel ~ C(original_emotion, Treatment(reference='Neutral')) + C(response_emotion, Treatment(reference='Neutral'))",2079,37,60,-1840.7257594267112,3697.4515188534224,3742.5686571562865,True

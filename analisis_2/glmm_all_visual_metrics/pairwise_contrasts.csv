@@ -1,0 +1,49 @@
+"metric","model","predictor","comparison","ratio","standard_error","df","z_or_t_ratio","p_value_bonferroni","approximate_percent_difference","significant_bonferroni_0_05"
+"fixation_count","Original emotion","original_emotion","Neutral / Negative",1.00982783480683,0.00889693723090382,Inf,1.11004161163597,0.800943287299239,0.982783480682659,FALSE
+"fixation_count","Original emotion","original_emotion","Neutral / Positive",0.988688815057416,0.0086869200474778,Inf,-1.29470178816252,0.586269368594573,-1.13111849425839,FALSE
+"fixation_count","Original emotion","original_emotion","Negative / Positive",0.979066709174783,0.00861487742435838,Inf,-2.4042877721434,0.0486120357050906,-2.09332908252169,TRUE
+"fixation_count","Reported emotion","response_emotion","Neutral / Negative",0.981398847123389,0.0121520738024332,Inf,-1.51637234659245,0.388275682265986,-1.86011528766107,FALSE
+"fixation_count","Reported emotion","response_emotion","Neutral / Positive",0.994564642840843,0.00872947438211505,Inf,-0.620949043699367,1,-0.543535715915733,FALSE
+"fixation_count","Reported emotion","response_emotion","Negative / Positive",1.01341533644149,0.0114971634798774,Inf,1.17463080113954,0.720427364947874,1.34153364414928,FALSE
+"fixation_count","Combined","original_emotion","Neutral / Negative",1.00948086019866,0.00890141633176499,Inf,1.07012882380614,0.853683979660074,0.948086019866023,FALSE
+"fixation_count","Combined","original_emotion","Neutral / Positive",0.989403756448151,0.00871082514128109,Inf,-1.209977682159,0.678862370437319,-1.05962435518493,FALSE
+"fixation_count","Combined","original_emotion","Negative / Positive",0.980111456747621,0.00866591176177073,Inf,-2.27205657697015,0.0692492800801045,-1.98885432523787,FALSE
+"fixation_count","Combined","response_emotion","Neutral / Negative",0.984083977037914,0.0122442026407252,Inf,-1.28948255421641,0.591691132704329,-1.59160229620864,FALSE
+"fixation_count","Combined","response_emotion","Neutral / Positive",0.995808787131611,0.00875759157780292,Inf,-0.477576215120226,1,-0.419121286838886,FALSE
+"fixation_count","Combined","response_emotion","Negative / Positive",1.01191444060393,0.0115016725133419,Inf,1.04203430599078,0.892187322068937,1.19144406039302,FALSE
+"dwell_time_s","Original emotion","original_emotion","Neutral / Negative",1.00784576821474,0.00698276181223472,Inf,1.12798721878402,0.777975950967574,0.784576821474481,FALSE
+"dwell_time_s","Original emotion","original_emotion","Neutral / Positive",1.00017035517653,0.00694911571528348,Inf,0.0245167432987119,1,0.0170355176525527,FALSE
+"dwell_time_s","Original emotion","original_emotion","Negative / Positive",0.992384337683121,0.00688934235566591,Inf,-1.10120659874683,0.812420251265145,-0.761566231687938,FALSE
+"dwell_time_s","Reported emotion","response_emotion","Neutral / Negative",0.992151999727577,0.00924067142964532,Inf,-0.845947602293857,1,-0.784800027242261,FALSE
+"dwell_time_s","Reported emotion","response_emotion","Neutral / Positive",0.989605425360349,0.00643358434064586,Inf,-1.6072475836387,0.324000202785102,-1.03945746396505,FALSE
+"dwell_time_s","Reported emotion","response_emotion","Negative / Positive",0.99743328202944,0.00858013050745886,Inf,-0.298762486871863,1,-0.256671797056007,FALSE
+"dwell_time_s","Combined","original_emotion","Neutral / Negative",1.00745999788148,0.00703819169555977,Inf,1.0638747924294,0.862156271104025,0.745999788148444,FALSE
+"dwell_time_s","Combined","original_emotion","Neutral / Positive",1.00044673156371,0.00701399580192902,Inf,0.0637056744858906,1,0.0446731563713776,FALSE
+"dwell_time_s","Combined","original_emotion","Negative / Positive",0.993038665224904,0.00697461939536917,Inf,-0.994613163789962,0.959773327973024,-0.696133477509631,FALSE
+"dwell_time_s","Combined","response_emotion","Neutral / Negative",0.992880196849874,0.00927156340828879,Inf,-0.765178068880476,1,-0.711980315012639,FALSE
+"dwell_time_s","Combined","response_emotion","Neutral / Positive",0.990053917019934,0.0064431103748939,Inf,-1.535974911989,0.373633600596323,-0.994608298006605,FALSE
+"dwell_time_s","Combined","response_emotion","Negative / Positive",0.997153453318027,0.00857781012787769,Inf,-0.331377283471006,1,-0.284654668197293,FALSE
+"mean_fixation_duration_ms","Original emotion","original_emotion","Neutral / Negative",0.997614840936232,0.00807353958453551,Inf,-0.295076562481759,1,-0.238515906376768,FALSE
+"mean_fixation_duration_ms","Original emotion","original_emotion","Neutral / Positive",1.01206003708312,0.00819552939720346,Inf,1.48037645259876,0.416318431550248,1.2060037083123,FALSE
+"mean_fixation_duration_ms","Original emotion","original_emotion","Negative / Positive",1.01447973261237,0.00821322206047834,Inf,1.77568090676128,0.227356578458847,1.4479732612372,FALSE
+"mean_fixation_duration_ms","Reported emotion","response_emotion","Neutral / Negative",1.00303027066517,0.00558201723053327,Inf,0.543684689495561,1,0.303027066517259,FALSE
+"mean_fixation_duration_ms","Reported emotion","response_emotion","Neutral / Positive",0.9956974777791,0.00387036972761944,Inf,-1.10926174272275,0.801951851853112,-0.430252222090033,FALSE
+"mean_fixation_duration_ms","Reported emotion","response_emotion","Negative / Positive",0.99268936033086,0.00507400972969067,Inf,-1.43552180067259,0.453415381658086,-0.731063966913981,FALSE
+"mean_fixation_duration_ms","Combined","original_emotion","Neutral / Negative",0.997548782920324,0.00803619213199623,Inf,-0.304648065799037,1,-0.245121707967622,FALSE
+"mean_fixation_duration_ms","Combined","original_emotion","Neutral / Positive",1.01193230400214,0.00815899061979813,Inf,1.47116390064389,0.423740391684974,1.19323040021357,FALSE
+"mean_fixation_duration_ms","Combined","original_emotion","Negative / Positive",1.0144188648496,0.00818269487522007,Inf,1.77476013116567,0.227812505783086,1.44188648496009,FALSE
+"mean_fixation_duration_ms","Combined","response_emotion","Neutral / Negative",1.00267701814394,0.00557704563076556,Inf,0.48064841877103,1,0.267701814393906,FALSE
+"mean_fixation_duration_ms","Combined","response_emotion","Neutral / Positive",0.995533241941223,0.00386704128404241,Inf,-1.15250055041361,0.74734633110536,-0.446675805877683,FALSE
+"mean_fixation_duration_ms","Combined","response_emotion","Negative / Positive",0.992875296757135,0.00507110433995376,Inf,-1.39994399178217,0.484590273186387,-0.712470324286452,FALSE
+"fixation_density_per_megapixel","Original emotion","original_emotion","Neutral / Negative",1.01132335571795,0.189755071696631,Inf,0.0600101182655668,1,1.13233557179535,FALSE
+"fixation_density_per_megapixel","Original emotion","original_emotion","Neutral / Positive",0.80921696077762,0.151834280424642,Inf,-1.12821487128291,0.777687554749658,-19.078303922238,FALSE
+"fixation_density_per_megapixel","Original emotion","original_emotion","Negative / Positive",0.800156504052203,0.150134107125088,Inf,-1.18822596662253,0.704233188143259,-19.9843495947797,FALSE
+"fixation_density_per_megapixel","Reported emotion","response_emotion","Neutral / Negative",0.992166882297316,0.0090854078296597,Inf,-0.858779106404418,1,-0.783311770268413,FALSE
+"fixation_density_per_megapixel","Reported emotion","response_emotion","Neutral / Positive",0.992904650985145,0.00637009744530717,Inf,-1.10989154246725,0.801137296260057,-0.709534901485509,FALSE
+"fixation_density_per_megapixel","Reported emotion","response_emotion","Negative / Positive",1.000743593342,0.00840693097189221,Inf,0.0884829126723537,1,0.0743593341999915,FALSE
+"fixation_density_per_megapixel","Combined","original_emotion","Neutral / Negative",1.01102775462513,0.189567149393276,Inf,0.0584929301003849,1,1.10277546251338,FALSE
+"fixation_density_per_megapixel","Combined","original_emotion","Neutral / Positive",0.809476416312977,0.151777087765586,Inf,-1.12729215073506,0.77885693990156,-19.0523583687023,FALSE
+"fixation_density_per_megapixel","Combined","original_emotion","Negative / Positive",0.800647076808601,0.150121929516151,Inf,-1.18578207868318,0.707125111932936,-19.9352923191399,FALSE
+"fixation_density_per_megapixel","Combined","response_emotion","Neutral / Negative",0.992189908473426,0.00908560076548588,Inf,-0.856246411398504,1,-0.781009152657386,FALSE
+"fixation_density_per_megapixel","Combined","response_emotion","Neutral / Positive",0.992915543942354,0.00637015192031424,Inf,-1.1081842184328,0.803346795068888,-0.708445605764552,FALSE
+"fixation_density_per_megapixel","Combined","response_emotion","Negative / Positive",1.00073134735874,0.00840681460021897,Inf,0.0870263902365983,1,0.0731347358737811,FALSE

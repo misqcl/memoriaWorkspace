@@ -1,0 +1,11 @@
+world_index,world_timestamp,surface_name,event_type
+0,140140.779978,Surface 1,enter
+27416,141059.559545,Surface 1,exit
+27428,141059.959621,Surface 1,enter
+27472,141061.435535,Surface 1,exit
+27480,141061.70363099998,Surface 1,enter
+27480,141061.70363099998,Surface 1,exit
+27497,141062.271445,Surface 1,enter
+27497,141062.271445,Surface 1,exit
+27506,141062.575576,Surface 1,enter
+27530,141063.379498,Surface 1,exit

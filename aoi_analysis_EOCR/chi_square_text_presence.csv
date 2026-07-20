@@ -1,0 +1,2 @@
+﻿association,chi_square,degrees_of_freedom,p_value,cramers_v_bias_corrected,n,min_expected_count,cells_expected_lt_5,significant_0_05,text_present_images,text_absent_images
+reported_emotion_x_text_presence,7.267218644055687,2,0.026420651468696103,0.05034174547723713,2079,62.12842712842713,0,True,44,16

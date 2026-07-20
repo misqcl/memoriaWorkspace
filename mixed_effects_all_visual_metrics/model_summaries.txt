@@ -1,0 +1,384 @@
+====================================================================================================
+Metric: dwell_time_s
+Model: Null
+Formula: log1p_dwell_time_s ~ 1
+====================================================================================================
+             Mixed Linear Model Regression Results
+================================================================
+Model:            MixedLM Dependent Variable: log1p_dwell_time_s
+No. Observations: 2079    Method:             ML                
+No. Groups:       37      Scale:              0.0060            
+Min. group size:  19      Log-Likelihood:     1733.0132         
+Max. group size:  60      Converged:          Yes               
+Mean group size:  56.2                                          
+-----------------------------------------------------------------
+                  Coef.  Std.Err.     z     P>|z|  [0.025  0.975]
+-----------------------------------------------------------------
+Intercept         2.120     0.019  109.667  0.000   2.082   2.158
+Group Var         0.014                                          
+filename Var      0.004                                          
+================================================================
+
+
+====================================================================================================
+Metric: dwell_time_s
+Model: Original emotion
+Formula: log1p_dwell_time_s ~ C(original_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                           MixedLM               Dependent Variable:               log1p_dwell_time_s
+No. Observations:                2079                  Method:                           ML                
+No. Groups:                      37                    Scale:                            0.0060            
+Min. group size:                 19                    Log-Likelihood:                   1733.4603         
+Max. group size:                 60                    Converged:                        Yes               
+Mean group size:                 56.2                                                                      
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        2.122    0.020 108.378 0.000  2.084  2.161
+C(original_emotion, Treatment(reference='Neutral'))[T.Negative] -0.005    0.005  -0.946 0.344 -0.016  0.006
+C(original_emotion, Treatment(reference='Neutral'))[T.Positive] -0.003    0.005  -0.464 0.643 -0.013  0.008
+Group Var                                                        0.014                                     
+filename Var                                                     0.004                                     
+===========================================================================================================
+
+
+====================================================================================================
+Metric: dwell_time_s
+Model: Reported emotion
+Formula: log1p_dwell_time_s ~ C(response_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                           MixedLM               Dependent Variable:               log1p_dwell_time_s
+No. Observations:                2079                  Method:                           ML                
+No. Groups:                      37                    Scale:                            0.0060            
+Min. group size:                 19                    Log-Likelihood:                   1733.1470         
+Max. group size:                 60                    Converged:                        Yes               
+Mean group size:                 56.2                                                                      
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        2.121    0.020 108.612 0.000  2.083  2.159
+C(response_emotion, Treatment(reference='Neutral'))[T.Negative] -0.002    0.008  -0.258 0.796 -0.018  0.014
+C(response_emotion, Treatment(reference='Neutral'))[T.Positive] -0.003    0.005  -0.514 0.607 -0.014  0.008
+Group Var                                                        0.014                                     
+filename Var                                                     0.004                                     
+===========================================================================================================
+
+
+====================================================================================================
+Metric: dwell_time_s
+Model: Combined
+Formula: log1p_dwell_time_s ~ C(original_emotion, Treatment(reference='Neutral')) + C(response_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                           MixedLM               Dependent Variable:               log1p_dwell_time_s
+No. Observations:                2079                  Method:                           ML                
+No. Groups:                      37                    Scale:                            0.0060            
+Min. group size:                 19                    Log-Likelihood:                   1733.6108         
+Max. group size:                 60                    Converged:                        Yes               
+Mean group size:                 56.2                                                                      
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        2.124    0.020 107.356 0.000  2.085  2.162
+C(original_emotion, Treatment(reference='Neutral'))[T.Negative] -0.005    0.005  -0.963 0.336 -0.016  0.005
+C(original_emotion, Treatment(reference='Neutral'))[T.Positive] -0.002    0.005  -0.450 0.653 -0.013  0.008
+C(response_emotion, Treatment(reference='Neutral'))[T.Negative] -0.002    0.008  -0.282 0.778 -0.018  0.014
+C(response_emotion, Treatment(reference='Neutral'))[T.Positive] -0.003    0.005  -0.544 0.586 -0.014  0.008
+Group Var                                                        0.014                                     
+filename Var                                                     0.004                                     
+===========================================================================================================
+
+
+====================================================================================================
+Metric: fixation_count
+Model: Null
+Formula: log1p_fixation_count ~ 1
+====================================================================================================
+              Mixed Linear Model Regression Results
+==================================================================
+Model:            MixedLM Dependent Variable: log1p_fixation_count
+No. Observations: 2079    Method:             ML                  
+No. Groups:       37      Scale:              0.0065              
+Min. group size:  19      Log-Likelihood:     1635.2781           
+Max. group size:  60      Converged:          Yes                 
+Mean group size:  56.2                                            
+--------------------------------------------------------------------
+                Coef.   Std.Err.      z      P>|z|   [0.025   0.975]
+--------------------------------------------------------------------
+Intercept       3.819      0.020   192.359   0.000    3.780    3.858
+Group Var       0.014                                               
+filename Var    0.005                                               
+==================================================================
+
+
+====================================================================================================
+Metric: fixation_count
+Model: Original emotion
+Formula: log1p_fixation_count ~ C(original_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                           MixedLM              Dependent Variable:              log1p_fixation_count
+No. Observations:                2079                 Method:                          ML                  
+No. Groups:                      37                   Scale:                           0.0065              
+Min. group size:                 19                   Log-Likelihood:                  1640.2960           
+Max. group size:                 60                   Converged:                       Yes                 
+Mean group size:                 56.2                                                                      
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        3.820    0.020 189.941 0.000  3.780  3.859
+C(original_emotion, Treatment(reference='Neutral'))[T.Negative] -0.010    0.006  -1.791 0.073 -0.021  0.001
+C(original_emotion, Treatment(reference='Neutral'))[T.Positive]  0.008    0.006   1.372 0.170 -0.003  0.019
+Group Var                                                        0.014                                     
+filename Var                                                     0.005                                     
+===========================================================================================================
+
+
+====================================================================================================
+Metric: fixation_count
+Model: Reported emotion
+Formula: log1p_fixation_count ~ C(response_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                           MixedLM              Dependent Variable:              log1p_fixation_count
+No. Observations:                2079                 Method:                          ML                  
+No. Groups:                      37                   Scale:                           0.0065              
+Min. group size:                 19                   Log-Likelihood:                  1636.5962           
+Max. group size:                 60                   Converged:                       Yes                 
+Mean group size:                 56.2                                                                      
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        3.819    0.020 191.137 0.000  3.779  3.858
+C(response_emotion, Treatment(reference='Neutral'))[T.Negative]  0.011    0.009   1.311 0.190 -0.006  0.028
+C(response_emotion, Treatment(reference='Neutral'))[T.Positive] -0.002    0.006  -0.365 0.715 -0.013  0.009
+Group Var                                                        0.014                                     
+filename Var                                                     0.005                                     
+===========================================================================================================
+
+
+====================================================================================================
+Metric: fixation_count
+Model: Combined
+Formula: log1p_fixation_count ~ C(original_emotion, Treatment(reference='Neutral')) + C(response_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                           MixedLM              Dependent Variable:              log1p_fixation_count
+No. Observations:                2079                 Method:                          ML                  
+No. Groups:                      37                   Scale:                           0.0065              
+Min. group size:                 19                   Log-Likelihood:                  1641.3909           
+Max. group size:                 60                   Converged:                       Yes                 
+Mean group size:                 56.2                                                                      
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        3.820    0.020 188.624 0.000  3.780  3.860
+C(original_emotion, Treatment(reference='Neutral'))[T.Negative] -0.010    0.006  -1.790 0.074 -0.021  0.001
+C(original_emotion, Treatment(reference='Neutral'))[T.Positive]  0.007    0.006   1.305 0.192 -0.004  0.019
+C(response_emotion, Treatment(reference='Neutral'))[T.Negative]  0.009    0.009   1.070 0.284 -0.008  0.026
+C(response_emotion, Treatment(reference='Neutral'))[T.Positive] -0.003    0.006  -0.516 0.606 -0.014  0.008
+Group Var                                                        0.014                                     
+filename Var                                                     0.005                                     
+===========================================================================================================
+
+
+====================================================================================================
+Metric: mean_fixation_duration_ms
+Model: Null
+Formula: log1p_mean_fixation_duration_ms ~ 1
+====================================================================================================
+                    Mixed Linear Model Regression Results
+=============================================================================
+Model:            MixedLM Dependent Variable: log1p_mean_fixation_duration_ms
+No. Observations: 2079    Method:             ML                             
+No. Groups:       37      Scale:              0.0026                         
+Min. group size:  19      Log-Likelihood:     2559.5054                      
+Max. group size:  60      Converged:          Yes                            
+Mean group size:  56.2                                                       
+---------------------------------------------------------------------------------
+                   Coef.     Std.Err.        z        P>|z|     [0.025     0.975]
+---------------------------------------------------------------------------------
+Intercept          5.107        0.012     428.984     0.000      5.084      5.130
+Group Var          0.005                                                         
+filename Var       0.002                                                         
+=============================================================================
+
+
+====================================================================================================
+Metric: mean_fixation_duration_ms
+Model: Original emotion
+Formula: log1p_mean_fixation_duration_ms ~ C(original_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                      MixedLM           Dependent Variable:           log1p_mean_fixation_duration_ms
+No. Observations:           2079              Method:                       ML                             
+No. Groups:                 37                Scale:                        0.0026                         
+Min. group size:            19                Log-Likelihood:               2568.7831                      
+Max. group size:            60                Converged:                    Yes                            
+Mean group size:            56.2                                                                           
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        5.109    0.012 422.607 0.000  5.085  5.133
+C(original_emotion, Treatment(reference='Neutral'))[T.Negative]  0.004    0.004   1.185 0.236 -0.003  0.011
+C(original_emotion, Treatment(reference='Neutral'))[T.Positive] -0.011    0.004  -3.003 0.003 -0.018 -0.004
+Group Var                                                        0.005                                     
+filename Var                                                     0.002                                     
+===========================================================================================================
+
+
+====================================================================================================
+Metric: mean_fixation_duration_ms
+Model: Reported emotion
+Formula: log1p_mean_fixation_duration_ms ~ C(response_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                      MixedLM           Dependent Variable:           log1p_mean_fixation_duration_ms
+No. Observations:           2079              Method:                       ML                             
+No. Groups:                 37                Scale:                        0.0026                         
+Min. group size:            19                Log-Likelihood:               2563.0422                      
+Max. group size:            60                Converged:                    Yes                            
+Mean group size:            56.2                                                                           
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        5.109    0.012 425.889 0.000  5.085  5.132
+C(response_emotion, Treatment(reference='Neutral'))[T.Negative] -0.014    0.006  -2.557 0.011 -0.025 -0.003
+C(response_emotion, Treatment(reference='Neutral'))[T.Positive] -0.001    0.004  -0.327 0.744 -0.008  0.006
+Group Var                                                        0.005                                     
+filename Var                                                     0.002                                     
+===========================================================================================================
+
+
+====================================================================================================
+Metric: mean_fixation_duration_ms
+Model: Combined
+Formula: log1p_mean_fixation_duration_ms ~ C(original_emotion, Treatment(reference='Neutral')) + C(response_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                      MixedLM           Dependent Variable:           log1p_mean_fixation_duration_ms
+No. Observations:           2079              Method:                       ML                             
+No. Groups:                 37                Scale:                        0.0026                         
+Min. group size:            19                Log-Likelihood:               2571.5701                      
+Max. group size:            60                Converged:                    Yes                            
+Mean group size:            56.2                                                                           
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        5.111    0.012 419.494 0.000  5.087  5.134
+C(original_emotion, Treatment(reference='Neutral'))[T.Negative]  0.004    0.004   1.153 0.249 -0.003  0.011
+C(original_emotion, Treatment(reference='Neutral'))[T.Positive] -0.010    0.004  -2.874 0.004 -0.018 -0.003
+C(response_emotion, Treatment(reference='Neutral'))[T.Negative] -0.012    0.006  -2.222 0.026 -0.023 -0.001
+C(response_emotion, Treatment(reference='Neutral'))[T.Positive] -0.001    0.004  -0.143 0.887 -0.008  0.007
+Group Var                                                        0.005                                     
+filename Var                                                     0.002                                     
+===========================================================================================================
+
+
+====================================================================================================
+Metric: fixation_density_per_megapixel
+Model: Null
+Formula: log1p_fixation_density_per_megapixel ~ 1
+====================================================================================================
+                      Mixed Linear Model Regression Results
+==================================================================================
+Model:            MixedLM Dependent Variable: log1p_fixation_density_per_megapixel
+No. Observations: 2079    Method:             ML                                  
+No. Groups:       37      Scale:              0.1269                              
+Min. group size:  19      Log-Likelihood:     -1910.5448                          
+Max. group size:  60      Converged:          Yes                                 
+Mean group size:  56.2                                                            
+---------------------------------------------------------------------------------------
+                    Coef.      Std.Err.         z         P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept           3.793         0.021      180.336      0.000       3.752       3.835
+Group Var           0.010                                                              
+filename Var        0.235                                                              
+==================================================================================
+
+
+====================================================================================================
+Metric: fixation_density_per_megapixel
+Model: Original emotion
+Formula: log1p_fixation_density_per_megapixel ~ C(original_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                     MixedLM         Dependent Variable:         log1p_fixation_density_per_megapixel
+No. Observations:          2079            Method:                     ML                                  
+No. Groups:                37              Scale:                      0.1234                              
+Min. group size:           19              Log-Likelihood:             -1880.0708                          
+Max. group size:           60              Converged:                  Yes                                 
+Mean group size:           56.2                                                                            
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        3.728    0.028 134.204 0.000  3.673  3.782
+C(original_emotion, Treatment(reference='Neutral'))[T.Negative] -0.013    0.032  -0.399 0.690 -0.075  0.050
+C(original_emotion, Treatment(reference='Neutral'))[T.Positive]  0.211    0.032   6.602 0.000  0.148  0.273
+Group Var                                                        0.010                                     
+filename Var                                                     0.228                                     
+===========================================================================================================
+
+
+====================================================================================================
+Metric: fixation_density_per_megapixel
+Model: Reported emotion
+Formula: log1p_fixation_density_per_megapixel ~ C(response_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                  Mixed Linear Model Regression Results
+==========================================================================================================
+Model:                    MixedLM         Dependent Variable:         log1p_fixation_density_per_megapixel
+No. Observations:         2079            Method:                     ML                                  
+No. Groups:               37              Scale:                      0.1207                              
+Min. group size:          19              Log-Likelihood:             -1867.1250                          
+Max. group size:          60              Converged:                  Yes                                 
+Mean group size:          56.2                                                                            
+----------------------------------------------------------------------------------------------------------
+                                                                Coef. Std.Err.    z    P>|z| [0.025 0.975]
+----------------------------------------------------------------------------------------------------------
+Intercept                                                       3.701    0.024 152.689 0.000  3.654  3.749
+C(response_emotion, Treatment(reference='Neutral'))[T.Negative] 0.425    0.045   9.393 0.000  0.337  0.514
+C(response_emotion, Treatment(reference='Neutral'))[T.Positive] 0.117    0.030   3.907 0.000  0.058  0.175
+Group Var                                                       0.008                                     
+filename Var                                                    0.227                                     
+==========================================================================================================
+
+
+====================================================================================================
+Metric: fixation_density_per_megapixel
+Model: Combined
+Formula: log1p_fixation_density_per_megapixel ~ C(original_emotion, Treatment(reference='Neutral')) + C(response_emotion, Treatment(reference='Neutral'))
+====================================================================================================
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                     MixedLM         Dependent Variable:         log1p_fixation_density_per_megapixel
+No. Observations:          2079            Method:                     ML                                  
+No. Groups:                37              Scale:                      0.1177                              
+Min. group size:           19              Log-Likelihood:             -1840.7258                          
+Max. group size:           60              Converged:                  Yes                                 
+Mean group size:           56.2                                                                            
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        3.644    0.030 121.545 0.000  3.585  3.703
+C(original_emotion, Treatment(reference='Neutral'))[T.Negative] -0.006    0.031  -0.206 0.837 -0.068  0.055
+C(original_emotion, Treatment(reference='Neutral'))[T.Positive]  0.196    0.031   6.235 0.000  0.134  0.257
+C(response_emotion, Treatment(reference='Neutral'))[T.Negative]  0.401    0.045   8.937 0.000  0.313  0.488
+C(response_emotion, Treatment(reference='Neutral'))[T.Positive]  0.110    0.030   3.709 0.000  0.052  0.168
+Group Var                                                        0.008                                     
+filename Var                                                     0.221                                     
+===========================================================================================================
+
+

@@ -1,0 +1,19 @@
+world_index,world_timestamp,surface_name,event_type
+0,50097.396352,Surface 1,enter
+312,50107.855604,Surface 1,exit
+322,50108.191478,Surface 1,enter
+709,50121.159574,Surface 1,exit
+713,50121.291417,Surface 1,enter
+966,50129.771577,Surface 1,exit
+976,50130.107383,Surface 1,enter
+1307,50141.199436,Surface 1,exit
+1316,50141.499382,Surface 1,enter
+1703,50154.467284,Surface 1,exit
+1706,50154.567649,Surface 1,enter
+3315,50208.487507,Surface 1,exit
+3322,50208.723233,Surface 1,enter
+3808,50225.125755,Surface 1,exit
+4181,50238.623243,Surface 1,enter
+4250,50241.531586,Surface 1,exit
+4547,50251.900966,Surface 1,enter
+33470,51221.943758,Surface 1,exit
