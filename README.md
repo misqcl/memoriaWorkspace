@@ -1,7 +1,7 @@
 # Repositorio de memoria de Martín Sepúlveda Quintanilla, Atención visual y respuesta emocional a imágenes publicitarias: Eye Tracking y Deep Learning.
 # Profesor Guía: Miguel Carrasco Zambrano
 # Profesor de Comisión: Jorge Zambrano Ibujes
-
+Este repositorio no contiene imágenes, las imágenes obtenidas a partir de los códigos se pueden encontrar en el siguiente [Drive]([https://pages.github.com/](https://drive.google.com/drive/folders/119HusQkFD-aInhsXiRmzBspSU3ZxTEeI)).
 ## Definiciones
 Este README de apoyo documentará los pasos necesarios para replicar los códigos utilizados para la obtención de datos, análisis e imágenes del documento de tesis.
 
