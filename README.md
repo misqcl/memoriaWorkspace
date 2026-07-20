@@ -392,7 +392,7 @@ analisis_2/
 
 `valid_response_observations.csv` es la fuente maestra para las etapas estadísticas y AOI. `valid_response_matrix.xlsx`, hoja `Usable`, es la matriz utilizada para reconstruir mapas y fijaciones empíricas.
 
-## Paso 2. Regenerar los mapas de calor empíricos
+## 2. Regenerar los mapas de calor empíricos
 
 ```bash
 py 02_create_heatmaps.py
@@ -406,7 +406,235 @@ analisis_2/image_heatmaps/
 ├── smoothed/
 └── overlay/
 ```
+## 3. Calcular métricas globales y estadísticas
 
+```bash
+py 03_heatmap_analysis_with_statistical_summary.py
+```
+
+Entrada principal:
+
+```text
+analisis_2/image_heatmaps/raw/
+analisis_2/valid_response_observations.csv
+results/
+fixation_summary_QA.xlsx
+Todos/Summary.xlsx
+```
+
+Salida:
+
+```text
+analisis_2/heatmap_analysis/heatmap_analysis_clean_no_nr.xlsx
+```
+## 4. Generar la matriz 3×3 de emoción original y percibida
+
+```bash
+py 04_3x3_heamap.py
+```
+
+Entrada:
+
+```text
+analisis_2/heatmap_analysis/heatmap_analysis_clean_no_nr.xlsx
+└── hoja: Image Metrics
+```
+
+Salida:
+
+```text
+analisis_2/emotion_confusion/emotion_original_vs_reported_heatmap_no_nr.png
+```
+## 5. Ajustar los GLMM del segundo análisis
+
+> [!NOTE]
+> Se recomienda nuevamente utilizar RStudio.
+```bash
+Rscript "05_glmm_all_visual_metrics_no_nr.R"
+```
+
+Entrada:
+
+```text
+analisis_2/heatmap_analysis/heatmap_analysis_clean_no_nr.xlsx
+└── hoja: User Image Metrics
+```
+Modelos:
+
+```text
+fixation_count                 → binomial negativa
+                  dwell_time_s → Gamma con enlace log
+mean_fixation_duration_ms      → Gamma con enlace log
+fixation_density_per_megapixel → Gamma con enlace log
+```
+
+Efectos aleatorios principales:
+
+```text
+(1 | participant) + (1 | filename)
+```
+
+Cuando un conjunto completo de modelos cruzados para una métrica no es válido, el script contempla una alternativa con intercepto por participante.
+
+Salidas:
+
+```text
+analisis_2/glmm_all_visual_metrics/
+├── glmm_all_metrics_results.xlsx
+├── model_information.csv
+├── model_comparisons.csv
+├── fixed_effects.csv
+├── pairwise_contrasts.csv
+├── descriptive_statistics.csv
+└── model_summaries.txt
+```
+
+## 6. Calcular métricas AOI y asociación con rostros
+
+```bash
+py 06_calculate_aoi_metrics_and_chi_square.py
+```
+
+El script cruza las fijaciones con las cajas semánticas y usa:
+
+```text
+analisis_2/valid_response_observations.csv
+```
+
+para excluir los pares sin respuesta válida.
+
+Entradas principales:
+
+```text
+semantic_aois_EOCR/semantic_aois_verified.csv
+results/<participante>/valid_fixations.csv
+image_aois/image_aoi_seed42.csv
+analisis_2/valid_response_observations.csv
+```
+
+Salidas:
+
+```text
+analisis_2/aoi_analysis_EOCR/
+├── aoi_metrics_long.csv
+├── aoi_metrics_wide.csv
+├── fixation_aoi_assignments.csv
+├── chi_square_cramers_v.csv
+├── chi_square_contingency_reported_emotion_x_face_presence.csv
+└── aoi_analysis_EOCR.xlsx
+```
+
+## 7. Calcular asociación con presencia de texto
+
+```bash
+py 07_chi_square_text_presence.py
+```
+
+Entradas principales:
+
+```text
+semantic_aois_EOCR/semantic_aois_verified.csv
+analisis_2/valid_response_observations.csv
+image_aois/image_aoi_seed42.csv
+```
+
+Salidas:
+
+```text
+analisis_2/aoi_analysis_EOCR/
+├── chi_square_text_presence.csv
+├── chi_square_contingency_reported_emotion_x_text_presence.csv
+└── chi_square_text_presence.xlsx
+```
+
+## 8. Evaluar DeepGaze con fijaciones filtradas
+Las predicciones de DeepGaze dependen únicamente de las imágenes. Por ello pueden reutilizarse desde el Análisis 1:
+
+```bash
+py 08_evaluate_deepgaze_predictions.py
+```
+El script compara las predicciones existentes con mapas empíricos reconstruidos únicamente desde pares válidos.
+
+Entradas:
+
+```text
+deepgaze_predictions/raw/
+analisis_2/image_heatmaps/raw/
+analisis_2/valid_response_matrix.xlsx
+analisis_2/valid_response_observations.csv
+results/
+image_aois/image_aoi_seed42.csv
+```
+
+Métricas:
+
+```text
+CC
+SIM
+KL(empírico || predicción)
+AUC-Judd
+NSS
+```
+
+Salidas:
+
+```text
+analisis_2/deepgaze_evaluation/
+├── deepgaze_metrics_by_image.csv
+├── deepgaze_metrics_summary.csv
+└── deepgaze_evaluation.xlsx
+```
+
+## 9. Seleccionar casos extremos de similitud con DeepGaze
+
+```bash
+py 09_select_extreme_heatmaps_vs_deepgaze_similarity.py
+```
+
+El script calcula similitud para mapas generales y reconstruye mapas por participante usando la matriz filtrada.
+
+Entradas principales:
+
+```text
+analisis_2/image_heatmaps/raw/
+deepgaze_predictions/raw/
+analisis_2/valid_response_matrix.xlsx
+results/
+image_aois/image_aoi_seed42.csv
+imagenes/top_imagenes/
+```
+
+Salidas:
+
+```text
+analisis_2/heatmap_similarity_extremes_vs_deepgaze/
+├── selected_heatmap_similarity_extremes.csv
+├── all_heatmap_similarity_scores.csv
+└── paneles comparativos
+```
+## 10. Integrar los resultados finales
+
+```bash
+py 10_integrate_final_results.py
+```
+
+Entradas:
+
+```text
+analisis_2/heatmap_analysis/heatmap_analysis_clean_no_nr.xlsx
+analisis_2/aoi_analysis_EOCR/aoi_metrics_wide.csv
+analisis_2/deepgaze_evaluation/deepgaze_metrics_by_image.csv
+efficientnet_b0_optuna/best_trial_predictions.csv
+image_aois/image_aoi_seed42.csv
+```
+
+Salidas:
+
+```text
+analisis_2/final_integrated_interpretation/
+├── final_integrated_interpretation.xlsx
+└── final_integrated_image_level.csv
+```
 # 5. Scripts que no forman parte del pipeline principal
 
 Los siguientes scripts son auxiliares, alternativas metodológicas o productos gráficos. No son necesarios para ejecutar el pipeline principal en orden.
