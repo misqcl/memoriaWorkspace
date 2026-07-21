@@ -6,7 +6,7 @@ Este repositorio no contiene imágenes, las imágenes obtenidas a partir de los 
 Este README de apoyo documentará los pasos necesarios para replicar los códigos utilizados para la obtención de datos, análisis e imágenes del documento de tesis.
 
 > [!IMPORTANT]
-> Se recomienda ejecutar los scripts en un entorno virtual. 
+> Se recomienda ejecutar los scripts en un entorno virtual. En el drive adjunto se encuentran las imágenes obtenidas de Deepgaze (predicción de mapas de calor), AOIs semánticos (caras y texto), comparación de mayor y menor similitud entre mapas empíricos y predicción por Deepgaze, imágenes complementarias y el repositorio original de imágenes. 
 ---
 # Análisis 1 (NR/No responde -> Neutral)
 En este primer análisis, las respuestas nulas, consideradas como NR o No Responde, se convirtieron en respuestas neutrales, reduciendo la distribución de los datos, en la segunda parte se incluye un análisis en donde estos datos son ignorados, permitiendo verificar si el aumento de distribución de emociones ayuda a los resultados.
